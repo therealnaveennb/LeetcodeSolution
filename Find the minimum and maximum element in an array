@@ -1,0 +1,17 @@
+class Solution 
+{
+    static Pair getMinMax(long a[], long n) 
+    {
+        long minimum = Long.MAX_VALUE;
+        long maximum = Long.MIN_VALUE;
+
+    for(int i=0;i<n;i++){
+       
+            minimum = Math.min(a[i], minimum);
+            maximum = Math.max(a[i], maximum);
+    }
+     
+       
+        return new Pair(minimum, maximum);
+    }
+}
