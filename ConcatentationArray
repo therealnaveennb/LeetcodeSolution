@@ -1,0 +1,8 @@
+int* getConcatenation(int* nums, int numsSize, int* returnSize) {
+    int* resultArray=(int*)malloc(sizeof(int)*2*numsSize);
+    *returnSize=2*numsSize;
+    for(int i=0;i<numsSize;i++){
+        resultArray[i]=resultArray[i+numsSize]=nums[i];
+    }
+    return resultArray;
+}
